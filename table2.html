@@ -21,7 +21,9 @@
         .blue{
             background-color: blueviolet;
         }
-
+       table,td,tr{
+        border: 1px solid black;
+       }
        
     </style>
 </head>
@@ -57,18 +59,59 @@
                 <td rowspan="3">tuesday</td>
                 <td class="yellow">8:00 a.m.</td>
                 <td class="yellow">11:00 a.m.</td>
-                <td rowspan="1.5">xpath</td>
+                <td rowspan="2">xpath</td>
             </tr>
             <tr>
                 <td class="yellow">11:00 a.m</td>
-                <td class="green">2:00 a.m</td>
-                <td rowspan="1.5" >xsl transformations</td>
+                <td class="green" >2:00 a.m</td>
+                <td rowspan="2">xsl transformations</td>
             </tr>
             <tr>
                 <td class="green">2:00 a.m</td>
                 <td class="blue">5:00 a.m</td>
             </tr>
         </tbody>
+        <tfoot>
+            <td>wednesday</td>
+            <td class="yellow">8:00 a.m.</td>
+            <td class="green">12:00 a.m.</td>
+            <td>xsl formatting object</td>
+        </tfoot>
+    </table>
+ <br><br>
+
+    <table border="2">
+        <tr>
+            <th rowspan="3">Day</th>
+            <th colspan="3">Seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">Schedule</th>
+            <th rowspan="2">Topic</th>
+        </tr>
+        <tr><th>Begin</th><th>End</th></tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00 a.m.</td>
+            <td rowspan="2">5:00 p.m.</td>
+            <td>Introduction to XML</td>
+        </tr>
+        <tr><td>Validity:DTD and Relax NG</td></tr>
+        <tr>
+            <td rowspan="3">Tuesday</td>
+            <td>8:00 a.m.</td>
+            <td>11:00 a.m.</td>
+            <td rowspan="2">XPath</td>
+        </tr>
+        <tr>
+            <td>11 a.m.</td>
+            <td>2:00 p.m.</td>
+        </tr>
+        <tr>
+            <td>2:00 p.m.</td>
+            <td>5:00 p.m.</td>
+            <td rowspan="2">XSL Transformations</td>
+        </tr>
         <tfoot>
             <td>wednesday</td>
             <td class="yellow">8:00 a.m.</td>
